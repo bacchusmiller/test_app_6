@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sTitle: MyString
+  iLeft_id: 1
+  iRight_id: 1
+  iCost: 1
+  sClassification: MyString
+  sClass1: MyString
+  sClass2: MyString
+  sClass3: MyString
+  sConjugation: MyString
+  sConjugation_type: MyString
+  sOriginal: MyString
+  sPronunciation1: MyString
+  sPronunciation2: MyString
+
+two:
+  sTitle: MyString
+  iLeft_id: 1
+  iRight_id: 1
+  iCost: 1
+  sClassification: MyString
+  sClass1: MyString
+  sClass2: MyString
+  sClass3: MyString
+  sConjugation: MyString
+  sConjugation_type: MyString
+  sOriginal: MyString
+  sPronunciation1: MyString
+  sPronunciation2: MyString

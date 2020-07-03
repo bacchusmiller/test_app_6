@@ -1,0 +1,2 @@
+module MdicHelper
+end

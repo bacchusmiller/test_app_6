@@ -1,25 +1,28 @@
-# SQLite. Versions 3.8.0 and up are supported.
-#   gem install sqlite3
+# MariaDB Server. Version 10.4.13-1.el7.centos.x86_64
+#   gem install mysql2
 #
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: vusr1004
+  password: poiu0987
+  host: localhost
   timeout: 5000
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: example_devl
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test.sqlite3
+  database: example_test
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: example_prod
